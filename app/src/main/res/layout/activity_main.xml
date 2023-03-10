@@ -25,11 +25,12 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <ImageView
+    <com.google.android.exoplayer2.ui.StyledPlayerView
         android:id="@+id/player_view"
         android:layout_width="match_parent"
-        android:layout_height="240dp"
-        android:src="@color/gray_500"
+        android:layout_height="0dp"
+        app:controller_layout_id="@layout/exoplayer_controls"
+        app:layout_constraintDimensionRatio="16:9"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
